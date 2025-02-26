@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mi-api-php
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mi-api-php
+  template:
+    metadata:
+      labels:
+        app: mi-api-php
+    spec:
+      containers:
+      - name: mi-api-php
+      #- name: quizzical_carson
+        image: mi-api-php:latest 
+        ports:
+        - containerPort: 80

@@ -1,0 +1,19 @@
+/proyecto-api
+│
+├── /src
+│   ├── index.php           # Archivo principal de la API
+│   ├── flight/             # Directorio de Flight PHP (si no usas Composer)
+│   └──  vendor/           
+├── /kubernetes
+│   ├── deployment.yaml     # Archivo de configuración de Deployment
+│   ├── service.yaml        # Archivo de configuración de Service
+│   ├── hpa.yaml            
+│   └── Loadbalancer.yaml  
+├── 
+├── .htaccess
+├── phpcs.xml.dist         
+├── Dockerfile              # Archivo Dockerfile para construir la imagen
+├── composer.json           
+├── composer.lock           
+└── Documentacion.md  
+             

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mi-api-php-service
+spec:
+  selector:
+    app: mi-api-php
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort  # Para exponerlo fuera del clúster en Minikube

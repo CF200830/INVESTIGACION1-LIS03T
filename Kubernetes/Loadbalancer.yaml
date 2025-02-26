@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mi-api-service
+spec:
+  selector:
+    app: mi-api-php #LoadBalancer # Tipo de servicio
+  ports:
+    - protocol: TCP # Protocolo de comunicación
+      port: 80         # Puerto externo (por donde se accederá al servicio)
+      targetPort: 8080 # Puerto interno (por donde se accederá al pod)
+
+
+
+
